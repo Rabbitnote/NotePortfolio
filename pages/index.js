@@ -1,5 +1,5 @@
 import { Fragment, useState, useEffect } from 'react';
-import Main from './mainPage/defaultPage';
+import Main from './mainPage/landingPage';
 import Head from 'next/head';
 export default function Home() {
     const [windowSize, setWindowSize] = useState({

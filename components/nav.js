@@ -1,6 +1,5 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
-import style from '../styles/Nav.module.scss';
 
 const Nav = () => {
     const componentNav = [
@@ -11,10 +10,10 @@ const Nav = () => {
     ];
     return (
         <Fragment>
-            <div className={style.container}>
+            <div>
                 {componentNav.map(item => {
                     return (
-                        <div className={style.nav} key={item.label}>
+                        <div key={item.label}>
                             <Link href={item.link}>{item.label}</Link>
                         </div>
                     );
