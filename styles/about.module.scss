@@ -1,0 +1,31 @@
+.container {
+    padding: 3rem;
+    &_about {
+        display: flex;
+        align-items: center;
+    }
+    &_edu{
+        background-image: linear-gradient(#7e4dea, #cf49c8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-top: 5rem;
+        padding-left: 6rem;
+    }
+    &_story {
+        &__header {
+            background-image: linear-gradient(#7e4dea, #cf49c8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        &__p {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+}
