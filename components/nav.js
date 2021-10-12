@@ -23,9 +23,9 @@ const Nav = () => {
                     })}
                 </div>
                 <div className={Styles.nav_linked}>
-                    <img src='../Image/facebook.png' alt='FacebookImage' />
-                    <img src='../Image/linkedIN.png' alt='LinkedIn' />
-                    <img src='../Image/github.png' alt='GithubImage' />
+                    <img src='/Image/Facebook.svg' alt='FacebookImage' />
+                    <img src='/Image/LinkedIN.svg' alt='LinkedIn' />
+                    <img src='/Image/Github.svg' alt='GithubImage' />
                 </div>
             </div>
         </Fragment>

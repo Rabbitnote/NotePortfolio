@@ -8,6 +8,7 @@
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
     &_logo {
         margin: 2rem;
+        width: 10%;
         cursor: pointer;
     }
     &_page {
@@ -20,12 +21,9 @@
             align-items: center;
             height: 100%;
             width: 100%;
-            padding: 1rem;
+            padding: 2rem;
+
             cursor: pointer;
-            
-            &:not(:last-child) {
-                margin-right: 1.5rem;
-            }
 
             &:hover{
                 background-color:rgba(#1B1C30, 50%) ;
