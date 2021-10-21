@@ -19,11 +19,9 @@ const LandingPage = () => {
             <Layout page='home'>
                 <div className={Styles.container}>
                     <div className={Styles.container_content}>
-                        <Lottie
-                            options={defaultOptions}
-                            className={Styles.container_content_img}
-
-                        />
+                        <div className={Styles.container_content_img}>
+                            <Lottie options={defaultOptions} />
+                        </div>
                         <div className={Styles.container_content_column}>
                             <div className={Styles.container_content_mainHead}>
                                 <h1 className={Styles.container_content_header}>
@@ -38,7 +36,7 @@ const LandingPage = () => {
                             <h1 className={Styles.container_content_name}>
                                 Thanakorn Aungkunchuchod
                             </h1>
-                           
+
                             <Link href='about'>
                                 <a className={Styles.container_content_btn}>
                                     About Me <i>&#8594;</i>
@@ -46,10 +44,6 @@ const LandingPage = () => {
                             </Link>
                         </div>
                     </div>
-                    {/* <div className={Styles.container_ball}></div>
-                    <div className={Styles.container_ball2}></div>
-                    <div className={Styles.container_ball3}></div>
-                    <div className={Styles.container_ball4}></div> */}
                 </div>
             </Layout>
         </Fragment>

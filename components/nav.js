@@ -1,12 +1,15 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import Link from 'next/link';
 import Styles from '../styles/nav.module.scss';
 
-const Nav = () => {
+const Nav = ({ page }) => {
+    useEffect(() => {
+        console.log(page);
+    });
     const componentNav = [
         { label: 'Home', link: '/', page: 'home' },
         { label: 'About', link: '/about', page: 'about' },
-        { label: 'Experiences', link: '/experiences', page: 'experiences' },
+        { label: 'Project', link: '/project', page: 'project' },
         { label: 'Contact', link: '/contact', page: 'contact' }
     ];
     return (
@@ -17,7 +20,16 @@ const Nav = () => {
                     {componentNav.map(item => {
                         return (
                             <Link href={item.link}>
-                                <div key={item.label}>{item.label}</div>
+                                <div
+                                    key={item.label}
+                                    className={`${
+                                        item.page === page
+                                            ? `${Styles.active}`
+                                            : ''
+                                    }`}
+                                >
+                                    {item.label}
+                                </div>
                             </Link>
                         );
                     })}

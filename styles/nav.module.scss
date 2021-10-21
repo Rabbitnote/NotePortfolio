@@ -1,10 +1,15 @@
+.active {
+    color: #7e4dea;
+}
+
 .nav {
     color: white;
     position: fixed;
     width: 100vw;
-    background-color: #1B1C30;
+    background-color: #1b1c30;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
     &_logo {
         margin: 2rem;
@@ -15,7 +20,6 @@
         display: flex;
         text-transform: uppercase;
         align-items: center;
-       
         div {
             display: flex;
             align-items: center;
@@ -24,10 +28,6 @@
             padding: 2rem;
 
             cursor: pointer;
-
-            &:hover{
-                background-color:rgba(#1B1C30, 50%) ;
-            }
         }
     }
     &_linked {

@@ -1,0 +1,101 @@
+.container {
+    width: 100vw;
+    height: 70vh;
+    padding: 2rem;
+    &_mininav {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        margin-top: 3rem;
+        font-size: 0.7rem;
+        h2 {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+    }
+    &_header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            background-image: linear-gradient(#7e4dea, #cf49c8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: end;
+            margin-top: 6rem;
+        }
+        &__lottie {
+            width: 40%;
+        }
+    }
+}
+.project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 5rem;
+    row-gap: 5rem;
+    column-gap: 1.5rem;
+    padding: 1.5rem;
+    &_tag{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        background-color: #fff;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.5rem 0.5rem;
+
+    }
+
+    &_card {
+        &__footer {
+            box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.03);
+            position: relative;
+            z-index: 3;
+            height: 20%;
+            div {
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 450px;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 20px;
+        &__web {
+            position: relative;
+            z-index: -2;
+            overflow: hidden;
+            width: 450px;
+            height: 450px;
+        }
+        &__mobile{
+            position: relative;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -2;
+            overflow: hidden;
+            width: 50%;
+            height: 80%;
+        }
+    }
+}

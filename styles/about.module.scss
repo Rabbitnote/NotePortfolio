@@ -4,6 +4,22 @@
         margin-top: 10rem;
         display: flex;
         justify-content: center;
+        &__button {
+            margin: 2rem;
+            padding: 0.85rem;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+            border-image: linear-gradient(to bottom, #7e4dea, #cf49c8);
+            border-image-slice: 10;
+            &:hover {
+                border-radius: 20px;
+                border: 2px solid #fff;
+                background-color: #fff;
+                color: black;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
 
         &__content {
             position: relative;
@@ -29,30 +45,15 @@
             h4 {
                 margin-bottom: 1.5rem;
             }
-            div {
-                margin: 2rem;
-                margin-top: 4rem;
-                height: 50px;
-                padding: 0.85rem;
-                border: 1px solid transparent;
-                border-image: linear-gradient(to bottom, #7e4dea, #cf49c8);
-                border-image-slice: 1;
-                transition: all 0.2s;
-                &:hover {
-                    border-radius: 20px;
-                    border: 2px solid #fff;
-                    background-color: #fff;
-                    color: black;
-                    font-weight: bold;
-                    font-size: 1.2rem;
-                }
-            }
         }
     }
     &_webLogo {
         display: block;
-        width: 100%;
+        width: 65%;
         height: 100%;
+        @media only screen and(min-width:1600px) {
+            width: 50%;
+        }
     }
     &_tech {
         display: flex;

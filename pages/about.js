@@ -60,7 +60,7 @@ const About = () => {
                                 Technology.
                             </h4>
                             <h3 className={Styles.container_edu__card_gpax}>
-                                Gpax : 3.02
+                                Gpax : 3.28
                             </h3>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ const About = () => {
                                 <h2>Community</h2>
                                 <h4>Google Developer Student Club in KMUTT</h4>
                                 <h5>Public relations (PR) in 2021-Present</h5>
-                                <div>
+                                <div className={Styles.container_community__button}>
                                     <a href='https://www.facebook.com/gdsc.kmutt'>
                                         See in Website
                                     </a>
