@@ -1,11 +1,30 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import Layout from '../components/Layout';
 import Styles from '../styles/project.module.scss';
-import Lottie from 'react-lottie';
-import Link from 'next/link';
-import animationData from '../public/Image/lottie/Testig-Tech-Colored.json';
 import detailProject from '../components/detailProject';
+import ProjectCard from '../components/projectCard';
+import animationData from '../public/Image/lottie/TestTech.json';
+import Lottie from 'react-lottie';
 const Project = () => {
+    const [tag, setTag] = useState('');
+    const tags = [
+        { text: 'All Project', tag: '' },
+        { text: 'Mobile Application', tag: 'Mobile Application' },
+        { text: 'Web Application', tag: 'Web Application' },
+        { text: 'Animation', tag: 'Animation' }
+    ];
+    const renderAnimation = () => {
+        if (tag === 'Animation') {
+            return (
+                <div className={Styles.comingsoon}>
+                    <div>
+                        <Lottie options={defaultOptions} />
+                    </div>
+                    <h1>Coming Soon...</h1>
+                </div>
+            );
+        }
+    };
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -14,7 +33,6 @@ const Project = () => {
             preserveAspectRatio: 'xMidYMid slice'
         }
     };
-
     return (
         <Fragment>
             <Layout page='project'>
@@ -23,54 +41,31 @@ const Project = () => {
                         <h1>My Project</h1>
                     </div>
                     <div className={Styles.container_mininav}>
-                        <h2>ALL Project</h2>
-                        <h2>Mobile Application</h2>
-                        <h2>Web Application</h2>
-                        <h2>Animation</h2>
-                    </div>
-
-                    <div className={Styles.project}>
-                        {detailProject.map(item => {
-                            const renderImg = () => {
-                                if (item.name === 'Setthi') {
-                                    return (
-                                        <img
-                                            src={item.img}
-                                            className={
-                                                Styles.project_card__mobile
-                                            }
-                                        ></img>
-                                    );
-                                }
-                                return (
-                                    <img
-                                        src={item.img}
-                                        className={Styles.project_card__web}
-                                    ></img>
-                                );
-                            };
+                        {tags.map(item => {
                             return (
-                                <Link href={`/projects/${item.link}/`}>
-                                    <div className={Styles.project_card}>
-                                        {renderImg()}
-                                        <div
-                                            className={
-                                                Styles.project_card__footer
-                                            }
-                                        >
-                                            <div>
-                                                <h1>{item.name}</h1>
-                                                <h1>View More ></h1>
-                                            </div>
-                                        </div>
-                                        <div className={Styles.project_tag}>
-                                            {item.tag}
-                                        </div>
-                                    </div>
-                                </Link>
+                                <h2
+                                    style={
+                                        item.tag == tag
+                                            ? { color: '#7e4dea' }
+                                            : {}
+                                    }
+                                    onClick={() => {
+                                        setTag(item.tag);
+                                    }}
+                                >
+                                    {item.text}
+                                </h2>
                             );
                         })}
                     </div>
+                    <div className={Styles.project}>
+                        {detailProject
+                            .filter(project => project.tag.includes(tag))
+                            .map(item => {
+                                return <ProjectCard item={item} />;
+                            })}
+                    </div>
+                    {renderAnimation()}
                 </div>
             </Layout>
         </Fragment>

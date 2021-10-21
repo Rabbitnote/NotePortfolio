@@ -61,10 +61,10 @@
         width: 50%;
         color: white;
         padding: 1.5rem;
-        margin-top: -2rem;
+        margin-top: -1rem;
         h1 {
             background-image: linear-gradient(#7e4dea, #d36b77);
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 3rem;
             font-weight: 700;
@@ -78,7 +78,7 @@
             font-size: 3rem;
             font-weight: 700;
             background-image: linear-gradient(#7e4dea, #d36b77);
-            -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         div {
@@ -91,14 +91,21 @@
     }
     &__img {
         width: 50%;
-
-        &_mobile {
-            width: 50%;
-        }
         &_web {
-            height: 450px;
-            img {
-            }
+            height: 90%;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &_mobile{
+            height: 100%;
+            width: 40%;
+            object-fit: cover;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 }

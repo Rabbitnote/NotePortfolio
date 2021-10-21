@@ -33,27 +33,30 @@ const Project = () => {
                             const renderLogo = () => {
                                 if (item.name === 'Setthi') {
                                     return (
-                                        <div
-                                            className={
-                                                Styles.content__img_mobile
-                                            }
-                                        >
-                                            <img src={item.logo} alt='Logo' />
+                                        <div className={Styles.content__img}>
+                                            <div className={Styles.content__img_mobile}>
+                                                <img
+                                                    src={item.logo}
+                                                    alt='Logo'
+                                                />
+                                            </div>
                                         </div>
                                     );
                                 }
                                 return (
-                                    <div className={Styles.content__img_web}>
-                                        <img src={item.logo} alt='Logo' />
+                                    <div className={Styles.content__img}>
+                                        <div
+                                            className={Styles.content__img_web}
+                                        >
+                                            <img src={item.logo} alt='Logo' />
+                                        </div>
                                     </div>
                                 );
                             };
                             return (
                                 <Fragment>
                                     <div className={Styles.content_layout}>
-                                        <div className={Styles.content__img}>
-                                            <div>{renderLogo()}</div>
-                                        </div>
+                                        {renderLogo()}
                                         <div className={Styles.content__detail}>
                                             <h1>{item.name}</h1>
                                             <h3>{item.desc}</h3>

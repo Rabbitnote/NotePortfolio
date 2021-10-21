@@ -53,14 +53,28 @@ const detailProject = [
         name: 'Setthi',
         link: 'setthi',
         tag: 'Mobile Application',
-        desc: '',
-        tech: ['Flutter', 'react'],
+        desc:
+            'Setthi is a expense manage mobile application. This application can help user to manage expense in daily life. My Responsilbe of this project is layout of the project and transaction. Also, catch the error if the user connection lost or invalid input',
+        tech: [
+            'Front-End : Flutter&Dart',
+            'Backend : NodeJs(Express)',
+            'Database : MySQL',
+            'Host : Google Cloud'
+        ],
         img: '/Image/Projects/setthi/home.png',
         linkweb:
             'https://play.google.com/store/apps/details?id=com.setthi.setthi',
         github: 'https://github.com/GGolfz/Setthi',
-        gallery: ['/Image/Projects/setthi/1.png','/Image/Projects/setthi/2.png','/Image/Projects/setthi/3.png','/Image/Projects/setthi/4.png','/Image/Projects/setthi/5.png','/Image/Projects/setthi/6.png','/Image/Projects/setthi/7.png'],
-        logo:'/Image/Projects/setthi/home.png'
+        gallery: [
+            '/Image/Projects/setthi/1.png',
+            '/Image/Projects/setthi/2.png',
+            '/Image/Projects/setthi/3.png',
+            '/Image/Projects/setthi/4.png',
+            '/Image/Projects/setthi/5.png',
+            '/Image/Projects/setthi/6.png',
+            '/Image/Projects/setthi/7.png'
+        ],
+        logo: '/Image/Projects/setthi/home.png'
     },
     {
         name: 'CSB',
