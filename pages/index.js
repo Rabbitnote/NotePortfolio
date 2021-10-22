@@ -28,7 +28,8 @@ export default function Home() {
             <Head>
             <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet"/>
             </Head>
-            {isMobile ? <Mobile></Mobile> : <Main></Main>}
+            {/* {isMobile ? <Mobile></Mobile> : <Main></Main>} */}
+            <Main></Main>
         </Fragment>
     );
 }

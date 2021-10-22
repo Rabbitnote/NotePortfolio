@@ -53,6 +53,7 @@
     }
 
     &_card {
+        cursor: pointer;
         &__footer {
             box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.03);
             position: relative;
