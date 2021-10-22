@@ -8,10 +8,21 @@
         color: #fff;
         margin-top: 3rem;
         font-size: 0.7rem;
+        @media only screen and(max-width:700px) {
+            font-size: 0.45rem;
+        }
+        @media only screen and(max-width:550px) {
+            font-size: 0.35rem;
+        }
+
         h2 {
             cursor: pointer;
             margin-left: 1.5rem;
             margin-right: 1.5rem;
+            @media only screen and(max-width:550px) {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
         }
     }
     &_header {
@@ -40,6 +51,9 @@
     row-gap: 5rem;
     column-gap: 1.5rem;
     padding: 1.5rem;
+    @media only screen and(max-width:450px) {
+        margin-top: 3rem;
+    }
 
     &_tag {
         position: absolute;
@@ -50,10 +64,30 @@
         font-size: 0.8rem;
         font-weight: 600;
         padding: 0.5rem 0.5rem;
+        @media only screen and(max-width:450px) {
+            font-size: 0.5rem;
+            padding: 0.3rem 0.3rem;
+        }
     }
 
     &_card {
         cursor: pointer;
+        @media only screen and(max-width:550px) {
+            margin-left: -2rem;
+        }
+        @media only screen and(max-width:500px) {
+            margin-left: -3.3rem;
+        }
+        @media only screen and(max-width:450px) {
+            margin-left: -4.75rem;
+        }
+        @media only screen and(max-width:400px) {
+            margin-left: -6.5rem;
+        }
+        @media only screen and(max-width:375px) {
+            margin-left: -7.5rem;
+        }
+      
         &__footer {
             box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.03);
             position: relative;
@@ -69,11 +103,13 @@
             h1 {
                 font-size: 1rem;
                 font-weight: 600;
+                @media only screen and(max-width:450px) {
+                    font-size: 0.8rem;
+                }
             }
         }
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         position: relative;
         top: 50%;
         left: 50%;
@@ -82,12 +118,29 @@
         height: 400px;
         background-color: #fff;
         border-radius: 20px;
+        @media only screen and(max-width:600px) {
+            width: 350px;
+            height: 300px;
+        }
+        @media only screen and(max-width:450px) {
+            width: 250px;
+            height: 200px;
+        }
+
         &__web {
             position: relative;
             z-index: -2;
             overflow: hidden;
             width: 450px;
             height: 450px;
+            @media only screen and(max-width:600px) {
+                width: 350px;
+                height: 300px;
+            }
+            @media only screen and(max-width:450px) {
+                width: 250px;
+                height: 200px;
+            }
         }
         &__mobile {
             position: relative;
@@ -110,6 +163,10 @@
     div {
         width: 30%;
         height: 30%;
+        @media only screen and(max-width:550px) {
+            width: 80%;
+            height: 80%;
+        }
     }
     font-size: 1rem;
     color: #fff;

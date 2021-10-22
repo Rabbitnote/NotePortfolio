@@ -111,9 +111,12 @@
         @media only screen and(min-width:1600px) {
             width: 50%;
         }
+        @media only screen and(max-width:500px) {
+            width: 70%;
+        }
     }
     &_tech {
-        display: flex;
+        display: f65x;
         justify-content: center;
         margin-top: 6rem;
         &__gallery {
@@ -227,6 +230,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @media only screen and(max-width:500px) {
+                flex-direction: column;
+            }
         }
         &__card {
             transition: all 0.5s;
@@ -239,6 +246,8 @@
             &:last-child {
                 margin-left: 3rem;
             }
+       
+           
             @media only screen and(max-width:1200px) {
                 width: 400px;
             }
@@ -247,6 +256,13 @@
             }
             @media only screen and(max-width:750px) {
                 width: 50%;
+            }
+            @media only screen and(max-width:500px) {
+                width: 300px;
+                &:last-child {
+                    margin-left: 0rem;
+                    margin-top: 3rem;
+                }
             }
 
             h3 {
@@ -259,7 +275,7 @@
                     font-size: 0.65rem;
                 }
                 @media only screen and(max-width:500px) {
-                    font-size: 0.45rem;
+                    font-size: 0.7rem;
                 }
             }
             h4 {
@@ -273,7 +289,7 @@
                     margin-top: 0.3rem;
                 }
                 @media only screen and(max-width:500px) {
-                    font-size: 0.35rem;
+                    font-size: 0.65rem;
                 }
             }
             &_gpax {
@@ -282,6 +298,7 @@
                 @media only screen and(max-width:950px) {
                     margin-top: 0.5rem;
                 }
+                
             }
             &:hover {
                 border: 1px solid transparent;
@@ -327,14 +344,12 @@
                 font-size: 0.65rem;
             }
             @media only screen and(max-width:600px) {
-                font-size: 0.45rem;
+                font-size: 0.4rem;
             }
             @media only screen and(max-width:500px) {
                 font-size: 0.3rem;
             }
-            @media only screen and(max-width:450px) {
-                font-size: 0.25rem;
-            }
+      
         }
     }
 }

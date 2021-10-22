@@ -59,6 +59,7 @@ const Project = () => {
                         })}
                     </div>
                     <div className={Styles.project}>
+                        
                         {detailProject
                             .filter(project => project.tag.includes(tag))
                             .map(item => {

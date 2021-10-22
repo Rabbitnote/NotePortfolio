@@ -1,6 +1,6 @@
 import Styles from '../styles/project.module.scss';
 import Link from 'next/link';
-const ProjectCard = ({item}) => {
+const ProjectCard = ({ item }) => {
     const renderImg = () => {
         if (item.name === 'Setthi') {
             return (
@@ -10,12 +10,7 @@ const ProjectCard = ({item}) => {
                 ></img>
             );
         }
-        return (
-            <img
-                src={item.img}
-                className={Styles.project_card__web}
-            ></img>
-        );
+        return <img src={item.img} className={Styles.project_card__web}></img>;
     };
     return (
         <Link href={`/projects/${item.link}/`}>
