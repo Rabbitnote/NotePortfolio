@@ -91,8 +91,12 @@ const About = () => {
                             <div className={Styles.container_community__text}>
                                 <h2>Community</h2>
                                 <h4>Google Developer Student Club in KMUTT</h4>
-                                <h5>Public relations (PR) in 2021-Present</h5>
-                                <div className={Styles.container_community__button}>
+                                <h4>Public relations (PR) in 2021-Present</h4>
+                                <div
+                                    className={
+                                        Styles.container_community__button
+                                    }
+                                >
                                     <a href='https://www.facebook.com/gdsc.kmutt'>
                                         See in Website
                                     </a>
@@ -100,7 +104,6 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    
                 </div>
                 <Footer></Footer>
             </Layout>
