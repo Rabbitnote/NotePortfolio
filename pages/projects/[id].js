@@ -34,7 +34,11 @@ const Project = () => {
                                 if (item.name === 'Setthi') {
                                     return (
                                         <div className={Styles.content__img}>
-                                            <div className={Styles.content__img_mobile}>
+                                            <div
+                                                className={
+                                                    Styles.content__img_mobile
+                                                }
+                                            >
                                                 <img
                                                     src={item.logo}
                                                     alt='Logo'
@@ -58,19 +62,26 @@ const Project = () => {
                                     <div className={Styles.content_layout}>
                                         {renderLogo()}
                                         <div className={Styles.content__detail}>
-                                            <h1>{item.name}</h1>
-                                            <h3>{item.desc}</h3>
                                             <div>
-                                                {renderLink()}
-                                                Github:
-                                                <a href={item.github}>
-                                                    {item.github}
-                                                </a>
+                                                <h1>{item.name}</h1>
+                                                <h3>{item.desc}</h3>
+
+                                                <div>
+                                                    {renderLink()}
+                                                    Github:
+                                                    <a href={item.github}>
+                                                        {item.github}
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <h2>Technology Stack</h2>
-                                            {item.tech.map(techs => {
-                                                return <div> - {techs}</div>;
-                                            })}
+                                            <div className={Styles.content__detail__tech}>
+                                                <h2>Technology Stack</h2>
+                                                {item.tech.map(techs => {
+                                                    return (
+                                                        <div> - {techs}</div>
+                                                    );
+                                                })}
+                                            </div>
                                         </div>
                                     </div>
                                     <h2 className={Styles.content__gallery}>
