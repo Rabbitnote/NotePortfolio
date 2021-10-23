@@ -113,6 +113,7 @@
         display: block;
         width: 65%;
         height: 100%;
+   
         @media only screen and(min-width:1600px) {
             width: 50%;
         }
@@ -249,6 +250,7 @@
             // border-radius: 20px;
             border: 1px solid #fff;
             padding: 2rem;
+            border-radius: 20px;
             color: #fff;
             &:last-child {
                 margin-left: 3rem;
@@ -308,7 +310,7 @@
             &:hover {
                 border: 1px solid transparent;
                 border-color: #7e4dea;
-                border-radius: 20px;
+                
             }
         }
     }
