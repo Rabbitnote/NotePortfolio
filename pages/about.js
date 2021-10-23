@@ -65,7 +65,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className={Styles.container_tech}>
-                        <h2>Tech & Skills</h2>
+                        <h2 className={Styles.container_tech__header}>Tech &#38; Skills</h2>
                     </div>
                     <div className={Styles.container_tech__gallery}>
                         <img src='/Image/Logo/Flutter.png' alt='Flutter Logo' />

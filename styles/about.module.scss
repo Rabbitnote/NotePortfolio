@@ -187,14 +187,14 @@
                 }
             }
         }
-        h2 {
+        &__header {
             background-image: linear-gradient(#7e4dea, #cf49c8);
             background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 3.5rem;
             font-weight: 600;
-            display: flex;
-            justify-content: center;
+            text-align: center;
+           
             @media only screen and(max-width:950px) {
                 font-size: 3rem;
             }
@@ -228,6 +228,8 @@
             @media only screen and(max-width:550px) {
                 font-size: 2.5rem;
                 padding-left: 1rem;
+                display: flex;
+                justify-content: center;
             }
             @media only screen and(max-width:450px) {
                 font-size: 2.5rem;
