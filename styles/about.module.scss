@@ -16,8 +16,9 @@
             padding: 0.85rem;
             border: 2px solid transparent;
             transition: all 0.2s;
-            border-image: linear-gradient(to bottom, #7e4dea, #cf49c8);
-            border-image-slice: 10;
+            border-color: #7e4dea;
+            border-radius: 20px;
+
             @media only screen and(max-width:750px) {
                 margin: 1.5rem;
                 padding: 0.5rem;
@@ -41,6 +42,10 @@
                 color: black;
                 font-weight: bold;
                 font-size: 1.2rem;
+                @media only screen and(max-width:650px) {
+                    font-size: 0.5rem;
+                    padding: 0.25rem 0.25rem;
+                }
             }
         }
 
@@ -187,6 +192,8 @@
             -webkit-text-fill-color: transparent;
             font-size: 3.5rem;
             font-weight: 600;
+            display: flex;
+            justify-content: center;
             @media only screen and(max-width:950px) {
                 font-size: 3rem;
             }
@@ -246,8 +253,7 @@
             &:last-child {
                 margin-left: 3rem;
             }
-       
-           
+
             @media only screen and(max-width:1200px) {
                 width: 400px;
             }
@@ -298,13 +304,11 @@
                 @media only screen and(max-width:950px) {
                     margin-top: 0.5rem;
                 }
-                
             }
             &:hover {
                 border: 1px solid transparent;
-
-                border-image: linear-gradient(to bottom, #7e4dea, #cf49c8);
-                border-image-slice: 1;
+                border-color: #7e4dea;
+                border-radius: 20px;
             }
         }
     }
@@ -349,7 +353,6 @@
             @media only screen and(max-width:500px) {
                 font-size: 0.3rem;
             }
-      
         }
     }
 }
