@@ -84,6 +84,7 @@
             display: flex;
             justify-content: center;
             margin-left: 0rem;
+            font-size: 2rem;
         }
     }
     &__img {
@@ -107,6 +108,7 @@
         @media only screen and(max-width:650px) {
             align-items: center;
             flex-direction: column;
+            padding: 3rem;
         }
     }
     &__detail {
@@ -193,18 +195,17 @@
             @media only screen and(max-width:850px) {
                 font-size: 1.35rem;
             }
+      
             @media only screen and(max-width:650px) {
-                font-size: 1rem;
+                font-size: 0.8rem;
                 margin-bottom: 0rem;
                 margin-top: 0rem;
-            }
-            @media only screen and(max-width:650px) {
-                font-size: 0.7rem;
             }
         }
         &__tech {
             @media only screen and(max-width:650px) {
-                margin-left: 2rem;
+                margin-left: 1rem;
+                width: 500px;
             }
         }
         div {
@@ -227,6 +228,11 @@
                 padding-left: 0rem;
                 display: inline-block;
             }
+            @media only screen and(max-width:550px) {
+                font-size: 0.4rem;
+                padding-left: 0rem;
+                display: inline-block;
+            }
 
             a {
                 padding-left: 0.5rem;
@@ -246,7 +252,7 @@
                     padding-left: 0.2rem;
                 }
                 @media only screen and(max-width:750px) {
-                    font-size: 0.3rem;
+                    font-size: 0.4rem;
                     padding-left: 0.2rem;
                 }
             }
