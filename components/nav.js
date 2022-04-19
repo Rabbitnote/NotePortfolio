@@ -1,11 +1,10 @@
 import { Fragment, useEffect } from 'react';
 import Link from 'next/link';
 import Styles from '../styles/nav.module.scss';
+import useGAEventsTracker from './useGAEventsTracker';
 
 const Nav = ({ page }) => {
-    useEffect(() => {
-        console.log(page);
-    });
+    const GAEventsTracker = useGAEventsTracker("Click Nav");
     const componentNav = [
         { label: 'Home', link: '/', page: 'home' },
         { label: 'About', link: '/about', page: 'about' },
@@ -21,6 +20,7 @@ const Nav = ({ page }) => {
                         return (
                             <Link href={item.link}>
                                 <div
+                                    onClick={(e)=>GAEventsTracker(item.label)}
                                     key={item.label}
                                     className={`${
                                         item.page === page
