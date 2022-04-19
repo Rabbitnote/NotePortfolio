@@ -7,10 +7,12 @@ import Lottie from 'react-lottie';
 import animationData from '../../public/Image/lottie/Blogging.json';
 import { useEffect } from 'react';
 import ReactGA from 'react-ga';
+import useGAEventsTracker from '../../components/useGAEventsTracker';
 const LandingPage = () => {
     useEffect(()=>{
         ReactGA.pageview(window.location.pathname + window.location.search)
     })
+    const GAEventsTracker = useGAEventsTracker("Click Site");
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -43,7 +45,7 @@ const LandingPage = () => {
                             </h1>
 
                             <Link href='about'>
-                                <a className={Styles.container_content_btn}>
+                                <a onClick={e => GAEventsTracker("About ME")} className={Styles.container_content_btn}>
                                     About Me <i>&#8594;</i>
                                 </a>
                             </Link>
