@@ -19,7 +19,7 @@ const ProjectCard = ({ item }) => {
                 <div className={Styles.project_card__footer}>
                     <div>
                         <h1>{item.name}</h1>
-                        <h1>View More ></h1>
+                        <h1>View More {'>'}</h1>
                     </div>
                 </div>
                 <div className={Styles.project_tag}>{item.tag}</div>

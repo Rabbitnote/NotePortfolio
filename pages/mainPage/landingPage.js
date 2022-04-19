@@ -5,7 +5,11 @@ import Styles from '../../styles/landingPage.module.scss';
 import Layout from '../../components/Layout';
 import Lottie from 'react-lottie';
 import animationData from '../../public/Image/lottie/Blogging.json';
+import ReactGA from 'react-ga';
 const LandingPage = () => {
+    useEffect(()=>{
+        ReactGA.pageview(window.location.pathname + window.location.search)
+    })
     const defaultOptions = {
         loop: true,
         autoplay: true,
