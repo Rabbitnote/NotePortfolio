@@ -5,6 +5,7 @@ import Styles from '../../styles/landingPage.module.scss';
 import Layout from '../../components/Layout';
 import Lottie from 'react-lottie';
 import animationData from '../../public/Image/lottie/Blogging.json';
+import { useEffect } from 'react';
 import ReactGA from 'react-ga';
 const LandingPage = () => {
     useEffect(()=>{
