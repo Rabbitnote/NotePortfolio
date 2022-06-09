@@ -24,12 +24,18 @@ const TestMixpanel = () => {
     event.preventDefault();
     const name = event.target.fname.value;
     const lastname = event.target.lname.value;
-    console.log(name + " " + lastname);
+    const age = event.target.age.value;
+    const email = event.target.email.value;
+    const gender = event.target.gender.value;
+    console.log(name + " " + lastname+" "+age+" "+email+" "+gender);
     Mixpanel.identify(name);
     Mixpanel.track("Submit Name");
     Mixpanel.people.set({
       $first_name: name,
       $last_name: lastname,
+      $age:age,
+      $email:email,
+      $gender:gender
     });
   };
   return (
@@ -47,16 +53,34 @@ const TestMixpanel = () => {
         <br />
         <input type="text" id="lname" name="lname" />
         <br />
+        <label htmlFor="lname" style={{ color: "white" }}>
+          Gender:
+        </label>
+        <br />
+        <input type="text" id="gender" name="gender" />
+        <br />
+        <label htmlFor="lname" style={{ color: "white" }}>
+          Email:
+        </label>
+        <br />
+        <input type="text" id="email" name="email" />
+        <br />
+        <label htmlFor="lname" style={{ color: "white" }}>
+          Age:
+        </label>
+        <br />
+        <input type="text" id="age" name="age" />
+        <br />
         <button type="submit" style={{ marginTop: "2rem", padding: "0.5rem" }}>
           {" "}
           submit
         </button>
       </form>
       <div>
-        <button onSubmit={sumbitNav}>Navbar</button>
-        <button onSubmit={sumbitTest1}> Test1</button>
-        <button onSubmit={sumbitTest2}>Test2</button>
-        <button onSubmit={sumbitTest3}>Test3</button>
+        <button onClick={sumbitNav}>Navbar</button>
+        <button onClick={sumbitTest1}> Test1</button>
+        <button onClick={sumbitTest2}>Test2</button>
+        <button onClick={sumbitTest3}>Test3</button>
       </div>
     </Fragment>
   );
