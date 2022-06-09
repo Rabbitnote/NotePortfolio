@@ -26,7 +26,7 @@ const TestMixpanel = () => {
     const lastname = event.target.lname.value;
     console.log(name + " " + lastname);
     Mixpanel.identify(name);
-    mixpanel.track("Clicked Link");
+    Mixpanel.track("Clicked Link");
     Mixpanel.people.set({
       $first_name: name,
       $last_name: lastname,
