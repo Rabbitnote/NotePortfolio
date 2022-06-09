@@ -2,6 +2,7 @@ import { Fragment, useEffect } from 'react';
 import Link from 'next/link';
 import Styles from '../styles/nav.module.scss';
 import useGAEventsTracker from './useGAEventsTracker';
+import { Mixpanel } from './Mixpanel';
 
 const Nav = ({ page }) => {
     const GAEventsTracker = useGAEventsTracker("Click Nav");
@@ -20,7 +21,9 @@ const Nav = ({ page }) => {
                         return (
                             <Link href={item.link}>
                                 <div
-                                    onClick={(e)=>GAEventsTracker(item.label)}
+                                    onClick={(e)=>{
+                                        Mixpanel.track(item.label + " Clicked")
+                                        GAEventsTracker(item.label)}}
                                     key={item.label}
                                     className={`${
                                         item.page === page
