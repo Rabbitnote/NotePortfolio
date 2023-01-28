@@ -21,7 +21,7 @@ const About = () => {
                             <p className={Styles.container_story__p}>
                                 Hello, my name is Thanakorn Aungkunchuchod, or
                                 can call me Note. <br />
-                                I’m a student at KMUTT University.
+                                I’m a graduated at KMUTT University.
                                 <br />I love to decorate web and mobile
                                 application to make the website <br />
                                 more lively and more interactive to the user.
@@ -53,14 +53,14 @@ const About = () => {
                             <h3>
                                 King Mongkut's University of Technology Thonburi
                             </h3>
-                            <h4>2018 - Present</h4>
+                            <h4>2018 - 2022</h4>
                             <h4>
                                 Studying Bachelor's degree (3rd year) of
                                 Computer Science, School of Information
                                 Technology.
                             </h4>
                             <h3 className={Styles.container_edu__card_gpax}>
-                                Gpax : 3.28
+                                Gpax : 3.3
                             </h3>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ const About = () => {
                             <div className={Styles.container_community__text}>
                                 <h2>Community</h2>
                                 <h4>Google Developer Student Club in KMUTT</h4>
-                                <h4>Public relations (PR) in 2021-Present</h4>
+                                <h4>Public relations (PR) in 2021</h4>
                                 <div
                                     className={
                                         Styles.container_community__button

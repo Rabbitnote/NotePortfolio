@@ -15,7 +15,7 @@ const Nav = ({ page }) => {
     return (
         <Fragment>
             <div className={Styles.nav}>
-                <div className={Styles.nav_logo}>LOGO</div>
+                <div className={Styles.nav_logo}></div>
                 <div className={Styles.nav_page}>
                     {componentNav.map(item => {
                         return (

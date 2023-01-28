@@ -98,6 +98,33 @@ const detailProject = [
             '/Image/Projects/csb/2.png',
             '/Image/Projects/csb/3.png'
         ]
+    },
+    {
+        name: 'SYNTHIA',
+        link: 'synthia',
+        tag: 'Mobile Application',
+        desc:
+            'Synthia is a Telemedicine Project for providing NCD patient to communicate to doctor via video calls and record main metrics to visualize graph for patient and doctor.',
+        tech: [
+            'FrontEnd : NextJs and ReactJs with Ionic',
+            'CSS Framework: Tailwind',
+        ],
+        img: '/Image/Projects/synthia/home.png',
+        linkweb: '',
+        logo: '/Image/Projects/synthia/home.png',
+        github: 'https://github.com/synthia-telemed/patient-frontend',
+        gallery: [
+            '/Image/Projects/synthia/1.png',
+            '/Image/Projects/synthia/2.png',
+            '/Image/Projects/synthia/3.png',
+            '/Image/Projects/synthia/4.png',
+            '/Image/Projects/synthia/5.png',
+            '/Image/Projects/synthia/6.png',
+            '/Image/Projects/synthia/7.png',
+            '/Image/Projects/synthia/8.png',
+            '/Image/Projects/synthia/9.png',
+
+        ]
     }
     // {
     //     name: 'Pogpog Papaya',
